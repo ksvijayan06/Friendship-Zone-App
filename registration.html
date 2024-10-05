@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <header>
+        <a href="home.html"><img src="friends.jpeg" alt="Friends"></a>
+        <h2 align="center">Friendship Zone</h2>
+    </header>
+    <main>
+        <h3>Add your details to register</h3>
+        <form action="user-confirmation.html">
+            <b><label for="username">Name: </label></b>
+            <input type="text" id="username" minlength="3" required pattern="^[a-zA-Z ]+$" autocomplete="off">
+            </br>
+
+            <b><label for="email">Email: </label></b>
+            <input id="email" type="email">
+            </br>
+
+            <b><label for="age">Age: </label></b>
+            <input id="age" type="number" min="18">
+            </br>
+
+            <b><label for="dob">Birth Day: </label></b>
+            <input id="dob" type="date">
+            </br>
+
+            <b><label>Gender: </label></b>
+            <input id="gender-male" type="radio" name="gender" value="male">
+            <label for="gender-male">M</label>
+            <input id="gender-female" type="radio" name="gender" value="female">
+            <label for="gender-female">F</label>
+            </br>
+
+            <b><label for="about">About: </label></b>
+            <textarea id="about" rows="4" cols="32"></textarea>
+            </br>
+
+            <b><label for="phone">Phone: </label></b>
+            <input id="phone" type="tel"></input>
+            </br>
+
+            <b>
+                <lable>Interest in: </lable>
+            </b>
+            <input type="radio" name="interest" id="interest-friend" value="friend">
+            <label for="interest-friend">Friendship</label>
+            <input type="radio" name="interest" id="interest-dating" value="dating">
+            <label for="interest-dating">Dating</label>
+
+            <b><label for="attachment">Attachment: </label></b>
+            <input type="file" id="attachment">
+            </br></br>
+
+            <button type="submit">Register</button>
+            <button type="submit" formaction="admin-confirmation.html">Register as Admin</button>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
